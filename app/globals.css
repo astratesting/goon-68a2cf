@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ink-black text-white;
+  }
+}
+
+@layer components {
+  .ledger-line {
+    @apply border-b border-cyan-500/10;
+  }
+
+  .glow-cyan {
+    text-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+  }
+
+  .glow-teal {
+    text-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #22d3ee, #14b8a6);
+  }
+}
